@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gardient"
+    tools:context=".dashboard.MainDashboard">
+
+    <Button
+        android:id="@+id/registrationListBtn"
+        style="@style/dashboard_button"
+        android:layout_width="200dp"
+        android:layout_marginTop="10dp"
+        android:text="Registration List"
+        android:textSize="15sp"
+        android:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registrationBtn" />
+
+    <Button
+        android:id="@+id/feeDetailsBtn"
+        android:layout_width="198dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="106dp"
+        android:backgroundTint="#07504F"
+        android:text="Fee Details"
+        android:textSize="15sp"
+        android:cornerRadius="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/registrationBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/registrationBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/registrationBtn"
+        style="@style/dashboard_button"
+        android:layout_width="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="24dp"
+        android:text="new registration"
+        android:textSize="15sp"
+        android:cornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/registrationListBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/registrationListBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feeDetailsBtn" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="194dp"
+        android:layout_height="168dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="119dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/victoria_bus_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
